@@ -10,7 +10,7 @@
     <table width="700px">
         <tr>
             <td> <b>Простая форма поиска с вариантами:</b> 
-            <form action="http://fe.it-academy.by/TestForm.php" method="post" ></form>
+            <form action="http://fe.it-academy.by/TestForm.php" method="get" >
             <fieldset>
             <legend>Строка поиска</legend>
             <input type="text">
@@ -22,10 +22,12 @@
     
             </legend>
             </fieldset>
+        <fieldset>
+        </form>
             </td>
 
         <td> <b>Простая форма поиска с вариантами:</b>
-            <form action="http://fe.it-academy.by/TestForm.php" method="post"> </form>
+            <form action="http://fe.it-academy.by/TestForm.php" method="get">
             <fieldset>
             <legend>Строка поиска</legend>
             <input type="text">
@@ -37,11 +39,12 @@
                     Автофокус в поле поиска</style></p>
             </legend>
             </fieldset>
+        </form>
         </td>
         </tr>
         <tr>
             <td><b>Простая форма авторизации</b>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post" ></form>
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" >
                 <fieldset>
                 <legend>Авторизуйтесь</legend>  
                 <input type="text" id="check3"><label for="check3"> *Логин</label><br>
@@ -51,9 +54,10 @@
             <p><input type="submit" value="Войти"></p>
             <p style="font-style:italic;"> * - обязательное поле</style></p>
         </legend>
+    </form>
         </td>
             <td> <b>Опрос(голосование):</b>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post" ></form>
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" >
                 <fieldset>
                 <legend>Как Вам?</legend>
                 <input type="radio" name="answer" value="a1">ничего <br>
@@ -67,11 +71,12 @@
                  <p style="font-style:italic;"> Есть скрытое поле 
                       name=date_voite, value="2013.12.31"</style> 
                  </p>
+                </form>
             </td>
         </tr>
 
         <td> <b>Загрузка файла на сервер:</b>
-            <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" ></form>
+            <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" >
             <fieldset>
             <legend>Upload</legend>
             <p>Файл</p>
@@ -84,8 +89,9 @@
                 enctype="multipart/form-data" для отправки
                 файла на сервер </style>
             </p>
+        </form>
             <td> <b>Валидация данных HTML5:</b>
-                <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" ></form>
+                <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" >
                 <fieldset>
                 <legend>Cтрока поиска</legend> 
                 <input type="text" name="a3" placeholder="Только русские буквы">
@@ -93,9 +99,9 @@
                 +ХХХ-ХХ-ХХХХХХХ, где Х - любое числа </style> </p>
                 <input type="text" name="a4" placeholder="+375-29-1234567">
                 <p><input type="submit"value="Проверить"></p> 
-          <tr>  
+          <tr></form>  
         <td> <b>Отзыв</b>
-        <form action="http://fe.it-academy.by/TestForm.php" method="post" ></form>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post" >
         <fieldset>
         <legend>Оставьте Ваш отзыв</legend> 
         <input type="text" id="check3"><label for="check3"> *Имя</label><br>
@@ -104,9 +110,9 @@
         <p><input type="submit"value="Отправить"></p>
         <p style="font-style:italic;"> * - обязательное поле <br>
              поле email - с проверкой <br>
-            метод POST</style> </p>
+            метод POST</style> </p></form>
             <td> <b>Выпадающий и мульти списки:</b>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post" ></form>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" >
                 <fieldset>
                 <legend>Города РБ</legend>
                 <select name="user_city" size="8" multiple>
