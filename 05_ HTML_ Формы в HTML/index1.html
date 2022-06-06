@@ -14,15 +14,13 @@
             <fieldset>
             <legend>Строка поиска</legend>
             <input type="text">
-            <input type="submit"value="Искать">
+            <input type="submit" value="Искать">
             <legend>
                 <input type="radio" name="answer" value="a1">на сайте
                 <input type="radio" name="answer" value="a2">в Google
-                <p style="font-style:italic;">Длина запроса не более 10 символов </style></p>
     
             </legend>
             </fieldset>
-        <fieldset>
         </form>
             </td>
 
@@ -35,8 +33,7 @@
             <legend>
                 <input type="radio" name="answer" value="a1">на сайте
                 <input type="radio" name="answer" value="a2">в Google
-                <p style="font-style:italic;">* - обязательное поле <br>
-                    Автофокус в поле поиска</style></p>
+                
             </legend>
             </fieldset>
         </form>
@@ -47,12 +44,11 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" >
                 <fieldset>
                 <legend>Авторизуйтесь</legend>  
-                <input type="text" id="check3"><label for="check3"> *Логин</label><br>
-                <input type="text" id="check3"><label for="check3"> *Пароль </label>
+                <input type="text" id="login"><label for="check3"> *Логин</label><br>
+                <input type="text" id="pass"><label for="check3"> *Пароль </label>
             <legend>    
             <input type="checkbox" name="answer" value="a1"> Оставаться в системе
             <p><input type="submit" value="Войти"></p>
-            <p style="font-style:italic;"> * - обязательное поле</style></p>
         </legend>
     </form>
         </td>
@@ -68,13 +64,10 @@
                  <p>
                     <input type="submit"value="Отправить">   
                  </p>
-                 <p style="font-style:italic;"> Есть скрытое поле 
-                      name=date_voite, value="2013.12.31"</style> 
-                 </p>
                 </form>
             </td>
         </tr>
-
+<tr>
         <td> <b>Загрузка файла на сервер:</b>
             <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" >
             <fieldset>
@@ -84,12 +77,7 @@
             <p>Срок хранения (года): </p>
             <input type="text">
             <input type="submit"value="Загрузить">
-            <p style="font-style:italic;">Метод POST <br>
-                В теге form используйте атрибут <br>
-                enctype="multipart/form-data" для отправки
-                файла на сервер </style>
-            </p>
-        </form>
+        </form></fieldset> 
             <td> <b>Валидация данных HTML5:</b>
                 <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" >
                 <fieldset>
@@ -99,7 +87,7 @@
                 +ХХХ-ХХ-ХХХХХХХ, где Х - любое числа </style> </p>
                 <input type="text" name="a4" placeholder="+375-29-1234567">
                 <p><input type="submit"value="Проверить"></p> 
-          <tr></form>  
+          <tr></form></fieldset> 
         <td> <b>Отзыв</b>
         <form action="http://fe.it-academy.by/TestForm.php" method="post" >
         <fieldset>
@@ -108,9 +96,7 @@
         <input type="text" id="check3"><label for="check3"> *e-mail </label>
         <textarea name="a5" id="" cols="15" rows="2">Форма отправки</textarea>
         <p><input type="submit"value="Отправить"></p>
-        <p style="font-style:italic;"> * - обязательное поле <br>
-             поле email - с проверкой <br>
-            метод POST</style> </p></form>
+        </form>
             <td> <b>Выпадающий и мульти списки:</b>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" >
                 <fieldset>
